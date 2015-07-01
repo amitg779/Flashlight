@@ -19,7 +19,7 @@
     border-top-width: 0;
 }
 /* 1st breakpoint - Float A and B */
-@media all and (min-width: 42em) {
+@media all and (min-width: 30em) {
     .rwd-example {
         overflow: hidden; /* Use this or a "clearfix" to give the container height */
     }
