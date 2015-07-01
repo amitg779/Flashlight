@@ -19,12 +19,15 @@
             <h3>FlashMe</h3>
         </div>
         <div data-role="content">
-            <!--Main menu links-->
-            Flashlight flicker
-			<input type="button" onclick="flash()" value="Flash It!" />
-        </div>
-        <div data-role="footer" data-theme="b">
-            <h4>FlashMe</h4>
+            <div style="position: absolute; text-align: center; width: 100%; margin-top: 30%;">
+                <label for="flipFlashlight">Toggle Flashlight:</label>
+                <input type="checkbox" data-role="flipswitch" id="flipFlashlight">
+            </div>
+
+            <div style="position: absolute; text-align: center; width: 100%; margin-top: 70%;">
+                <label for="flipFlicker">Toggle Flicker:</label>
+                <input type="checkbox" data-role="flipswitch" id="flipFlicker">
+            </div>
         </div>
     </div>
 </body>
