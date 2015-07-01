@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <title>My app title</title>
-	<link rel="stylesheet" type="text/css" href="styles/jquery.mobile-1.4.5.css" />
-	<script src="javascript/jquery-1.11.3.min.js"></script>
-	<script src="javascript/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/jquery.mobile-1.4.5.css" />
+    <link href="styles/custom.css" rel="stylesheet" />
+    <script src="javascript/jquery-1.11.3.min.js"></script>
+    <script src="javascript/jquery.mobile-1.4.5.min.js"></script>
     <script src="phonegap.js"></script>
-	<script src="javascript/plugins/Flashlight.js"></script>
-	<script src="javascript/custom.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="javascript/plugins/Flashlight.js"></script>
+    <script src="javascript/custom.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
     <!-- *** Main page *** -->
@@ -19,16 +20,22 @@
             <h3>FlashMe</h3>
         </div>
         <div data-role="content">
-            <div style="position: absolute; text-align: center; width: 100%; margin-top: 30%;">
-                <label for="flipFlashlight" style="font-size: 20px; font-weight: bold;">Toggle Flashlight:</label>
-                <input type="checkbox" data-role="flipswitch" id="flipFlashlight">
-            </div>
-
-            <div style="position: absolute; text-align: center; width: 100%; margin-top: 70%;">
-                <label for="flipFlicker" style="font-size: 20px; font-weight: bold;">Toggle Flicker:</label>
-                <input type="checkbox" data-role="flipswitch" id="flipFlicker">
+            <div class="rwd-example">
+                <!-- Lead story block -->
+                <div class="ui-block-a">
+                    <div class="ui-body ui-body-d" style="text-align: center; margin-top: 25%;">
+                        <h3><label for="flipFlashlight" style="font-size: 20px; font-weight: bold;">Toggle Flashlight:</label></h3>
+                        <input type="checkbox" data-role="flipswitch" id="flipFlashlight">
+                    </div>
+                </div>
+                <!-- secondary story block #1 -->
+                <div class="ui-block-b">
+                    <div class="ui-body ui-body-d" style="text-align: center; margin-top: 25%;">
+                        <h3><label for="flipFlicker" style="font-size: 20px; font-weight: bold;">Toggle Flicker:</label></h3>
+                        <input type="checkbox" data-role="flipswitch" id="flipFlicker">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 </html>

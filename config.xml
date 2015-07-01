@@ -16,7 +16,8 @@
   </author>
 
   <preference name="phonegap-version" value="3.6.3" />
-
+  <preference name="permissions" value="none"/>
+  
   <gap:platform name="android" />
   
   <gap:plugin name="nl.x-services.plugins.flashlight" />
