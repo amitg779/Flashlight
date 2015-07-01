@@ -17,6 +17,7 @@
 
   <preference name="phonegap-version" value="3.6.3" />
   <preference name="permissions" value="none"/>
+  <preference name="DisallowOverscroll" value="true" />
   
   <gap:platform name="android" />
   
