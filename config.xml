@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    xmlns:android   = "http://schemas.android.com/apk/res/android"
+    id        = "net.amitgolan.app"
+    version   = "0.0.1">
+
+  <name>FlashMe Flashlight</name>
+
+  <description>
+    Featured flashlight, with flickswitch mode and more...
+  </description>
+
+  <author href="http://empires-allies.com" email="cywiz@msn.com">
+    Amit Golan
+  </author>
+
+  <preference name="phonegap-version" value="3.6.3" />
+
+  <gap:platform name="android" />
+  
+  <gap:plugin name="nl.x-services.plugins.flashlight" />
+
+  <icon src="icon.png" />
+</widget>
