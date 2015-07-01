@@ -1,24 +1,26 @@
-$("#flipFlashlight").change(function () {
-    if ($("#flipFlashlight").is(":checked")) {
-        window.plugins.flashlight.available(function (isAvailable) {
-            if (isAvailable) {
-                // switch on
-                window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
-            } else {
-                alert("Flashlight not available on this device");
-            }
-        });
-    }
-    else {
-        window.plugins.flashlight.available(function (isAvailable) {
-            if (isAvailable) {
-                // switch off
-                window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
-            } else {
-                alert("Flashlight not available on this device");
-            }
-        });
-    }
+$(document).ready(function () {
+    $("#flipFlashlight").change(function () {
+        if ($("#flipFlashlight").is(":checked")) {
+            window.plugins.flashlight.available(function (isAvailable) {
+                if (isAvailable) {
+                    // switch on
+                    window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
+                } else {
+                    alert("Flashlight not available on this device");
+                }
+            });
+        }
+        else {
+            window.plugins.flashlight.available(function (isAvailable) {
+                if (isAvailable) {
+                    // switch off
+                    window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
+                } else {
+                    alert("Flashlight not available on this device");
+                }
+            });
+        }
+    });
 });
 
 function flash() {
