@@ -1,41 +1,56 @@
 $(document).ready(function () {
+    var state = "off";
+
+    // Listener for Flashlight Toggle
     $("#flipFlashlight").change(function () {
-        if ($("#flipFlashlight").is(":checked")) {
-            window.plugins.flashlight.available(function (isAvailable) {
-                if (isAvailable) {
-                    // switch on
-                    window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
-                } else {
-                    alert("Flashlight not available on this device");
-                }
-            });
+        if ($(this).is(":checked")) {
+            flash("on");
         }
         else {
-            window.plugins.flashlight.available(function (isAvailable) {
-                if (isAvailable) {
-                    // switch off
-                    window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
-                } else {
-                    alert("Flashlight not available on this device");
+            flash("off");
+        }
+    });
+
+    // Listener for Flicker Toggle
+    var intrFlicker;
+    $("#flipFlicker").change(function () {
+        if ($(this).is(":checked")) {
+            intrFlicker = setInterval(function () {
+                switch (state) {
+                    case "off":
+                        state = "on";
+                        flash("on");
+                        break;
+                    case "on":
+                        state = "off";
+                        flash("off");
+                        break;
                 }
-            });
+            }, 1000);
+        }
+        else {
+            clearInterval(intrFlicker);
         }
     });
 });
 
-function flash() {
+
+// Flash function
+function flash(state) {
     window.plugins.flashlight.available(function (isAvailable) {
         if (isAvailable) {
-
-            // switch on
-            window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
-
-            // switch off after 3 seconds
-            setTimeout(function () {
-                window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
-            }, 3000);
-
-        } else {
+            switch (state) {
+                case "on":
+                    // switch on
+                    window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
+                    break;
+                case "off":
+                    // switch off
+                    window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
+                    break;
+            }
+        }
+        else {
             alert("Flashlight not available on this device");
         }
     });
