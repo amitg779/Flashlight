@@ -11,6 +11,15 @@ $(document).ready(function () {
         }
     });
 
+
+    $("#btnPulse").keydown(function () {
+        flash("on");
+    });
+
+    $("#btnPulse").keyup(function () {
+        flash("off");
+    });
+
     // Listener for Flicker Toggle
     var intrFlicker;
     $("#flipFlicker").change(function () {
