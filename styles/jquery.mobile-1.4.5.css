@@ -1236,10 +1236,10 @@ html head + body .ui-btn.ui-btn-a:visited {
     html .ui-body-a .ui-btn:hover,
     html body .ui-group-theme-a .ui-btn:hover,
     html head + body .ui-btn.ui-btn-a:hover {
-        background-color: #373737 /*{a-bhover-background-color}*/;
-        border-color: #1f1f1f /*{a-bhover-border}*/;
+        background-color: #8cc63f /*{a-bhover-background-color}*/;
+        border-color: #527722 /*{a-bhover-border}*/;
         color: #fff /*{a-bhover-color}*/;
-        text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #111 /*{a-bhover-shadow-color}*/;
+        text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #70a031 /*{a-bhover-shadow-color}*/;
     }
     /* Button down */
     .ui-page-theme-a .ui-btn:active,
