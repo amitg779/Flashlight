@@ -13,11 +13,11 @@ $(document).ready(function () {
 
 
     // Listener for Pulse Button
-    $("#btnPulse").vmousedown(function () {
+    $("#btnPulse").on("vmousedown", function () {
         flash("on");
     });
 
-    $("#btnPulse").vmouseup(function () {
+    $("#btnPulse").on("vmouseup", function () {
         flash("off");
     });
 
