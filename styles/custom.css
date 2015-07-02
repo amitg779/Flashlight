@@ -37,6 +37,17 @@ user-drag: none;
 
 
 
+/* Toggle button class */
+.button-on {
+    background-color: #8cc63f /*{a-active-background-color}*/ !important;
+	border-color: #527722 /*{a-active-border}*/ !important;
+	color: #fff /*{a-active-color}*/ !important;
+	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #70a031 /*{a-active-shadow-color}*/ !important;
+}
+
+
+
+
 /* Basic styles */
 .rwd-example .ui-body {
     text-align: left;
