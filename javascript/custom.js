@@ -12,13 +12,15 @@ $(document).ready(function () {
     });
 
 
-    $("#btnPulse").keydown(function () {
+    // Listener for Pulse Button
+    $("#btnPulse").mousedown(function () {
         flash("on");
     });
 
-    $("#btnPulse").keyup(function () {
+    $("#btnPulse").mouseup(function () {
         flash("off");
     });
+
 
     // Listener for Flicker Toggle
     var intrFlicker;
