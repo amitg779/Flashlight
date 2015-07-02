@@ -12,6 +12,19 @@ $(document).ready(function () {
     });
 
 
+    // Listener for Toggle Button
+    $("#btnToggle").on("vmousedown", function () {
+        if (state == "off") {
+            flash("on");
+            state = "on";
+        }
+        else {
+            flash("off");
+            state = "off";
+        }
+    });
+
+
     // Listener for Pulse Button
     $("#btnPulse").on("vmousedown", function () {
         flash("on");

@@ -15,8 +15,8 @@
 </head>
 <body>
     <!-- *** Main page *** -->
-    <div data-role="page" id="page-home">
-        <div data-role="header" style="text-align:center;" data-theme="b">
+    <div data-role="page" id="page-home" data-theme="b">
+        <div data-role="header" style="text-align:center;">
             <h3>FlashMe</h3>
         </div>
         <div data-role="content">
@@ -24,16 +24,13 @@
                 <!-- Lead story block -->
                 <div class="ui-block-a">
                     <div class="ui-body ui-body-d" style="text-align: center; margin-top: 25%;">
-                        <h3><label for="flipFlashlight" style="font-size: 20px; font-weight: bold;">Toggle Flashlight:</label></h3>
-                        <input type="checkbox" data-role="flipswitch" id="flipFlashlight" style="height: 150px;">
+                        <button class="ui-btn ui-corner-all" id="btnToggle" style="height: 100px;">Toggle Flashlight</button>
                     </div>
                 </div>
                 <!-- secondary story block #1 -->
                 <div class="ui-block-b">
                     <div class="ui-body ui-body-d" style="text-align: center; margin-top: 25%;">
-                        <h3><label for="bbbbbtnPulse" style="font-size: 20px; font-weight: bold;">Press for Pulse:</label></h3>
-                        <!-- input type="checkbox" data-role="flipswitch" id="flipFlicker" -->
-                        <input type="button" class="ui-btn" id="btnPulse" value="Pulse" />
+                        <button class="ui-btn ui-corner-all" id="btnPulse" style="height: 100px;">Pulse Light</button>
                     </div>
                 </div>
             </div>
