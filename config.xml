@@ -3,16 +3,16 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     xmlns:android   = "http://schemas.android.com/apk/res/android"
     id        = "net.amitgolan.flashlight"
-    version   = "0.0.4">
+    version   = "0.1.0">
 
-  <name>FlashMe Flashlight</name>
+  <name>Simply Flashlight</name>
 
   <description>
-    Featured flashlight, with flickswitch mode and more...
+    Simple flashlight app including pulse button
   </description>
 
-  <author href="http://empires-allies.com" email="cywiz@msn.com">
-    Amit Golan
+  <author href="" email="cywiz@msn.com">
+    Hexagon Team
   </author>
 
   <preference name="phonegap-version" value="3.7.0" />
